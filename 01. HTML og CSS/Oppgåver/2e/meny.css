@@ -1,0 +1,65 @@
+:root {
+    --tekst: #73683bff;
+    --kontrastbakgrunn: #583e23ff;
+    --kontrasttekst: #13262fff;
+    --bakgrunn: #b0a084ff;
+    --kontrast: #e9e6ffff;}
+
+body {
+    background-color: var(--bakgrunn);
+    color: var(--tekst);
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    background-color: var(--kontrastbakgrunn);
+    color: var(--kontrasttekst);
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.3em;
+    margin-bottom: 50px;
+}
+
+nav ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: space-evenly;
+}
+
+nav a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: var(--tekst);
+    
+}
+
+nav li {
+    flex-grow: 1;
+    text-align: center;
+    min-width: 250px;
+    text-align: center;
+    padding: 0;
+    height: 100;
+    flex: 1;
+}
+
+nav a:hover {
+    background-color: var(--kontrast);
+    color: var(--kontrasttekst);
+}
+
+main {
+
+    background-color: var(--kontrast);
+    width: 80%;
+    margin: auto;
+    padding: 10px;
+}
