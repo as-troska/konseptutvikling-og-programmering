@@ -1,0 +1,48 @@
+main {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    height: 100vh;
+    width: 100vw;
+    gap: 10px;
+    grid-template-areas: "he he he he he he he he"
+                         "na ar ar ar ar se se se"
+                         "na ar ar ar ar se se se"
+                         "na ar ar ar ar as as as"
+                         "fo fo fo fo fo fo fo fo";
+}
+
+main > * {
+    border-radius: 10px;
+}
+
+header {
+    grid-area: he;
+    background-color: aqua;
+}
+
+footer {
+    grid-area: fo;
+    background-color: yellow;
+}
+
+aside {
+    grid-area: as;
+    background-color: blueviolet;
+}
+
+section {
+    grid-area: se;
+    background-color: chartreuse;
+}
+
+article {
+    grid-area: ar;
+    background-color: blue;
+}
+
+nav {
+    grid-area: na;
+    background-color: bisque;
+}
+
