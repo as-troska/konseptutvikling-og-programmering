@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tverrfaglig prosjekt - Engelsk/Konseputvikling og programmering</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <header><h1>Tverrfaglig prosjekt - Engelsk/Konseptutvikling og programmering</h1></header>
+
+    <nav>
+        <ul id="pupilNav">
+            
+        </ul>
+    </nav>
+
+    <main>
+        <iframe id="pupilSite">
+            <p>Your browser does not support iframes.</p>
+        </iframe>
+    </main>
+
+
+    <div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+
+    <footer>
+        <form id="responseForm" action="/saveComments" method="POST">
+            <input type="hidden" id="pupilName" name="pupil">
+            <h2>Concept development and programming:</h2>
+            <label for="markup">Use markup language and styling sets in different productions.</label><br/>
+            <input type="radio" name="markup" value="3">High<input type="radio" name="markup" value="2">Middle<input type="radio" name="markup" value="1">Low<input type="radio" name="markup" value="0" checked>Not assessed
+
+            <br/>
+            
+            <label for="stories">Use programming to solve practical challenges and to tell interactive stories.</label><br/>
+            <input type="radio" name="stories" value="3">High<input type="radio" name="stories" value="2">Middle<input type="radio" name="stories" value="1">Low<input type="radio" name="stories" value="0" checked>Not assessed
+            
+            <br/>
+
+            <label for="concepts">Visualise and develop concepts and ideas adapted to different platforms.</label><br/>
+            <input type="radio" name="concepts" value="3">High<input type="radio" name="concepts" value="2">Middle<input type="radio" name="concepts" value="1">Low<input type="radio" name="concepts" value="0" checked>Not assessed
+            
+            <br/>
+
+            <h3>Comments</h3>
+            <textarea name="cdapComments">
+
+            </textarea>
+
+            <h2>English:</h2>
+
+            <label for="diversity">Explore and reflect on diversity and social conditions in the English-speaking world based on historical contexts.</label>
+            <br/>
+            <input type="radio" name="diversity" value="3">High<input type="radio" name="diversity" value="2">Middle<input type="radio" name="diversity" value="1">Low<input type="radio" name="diversity" value="0" checked>Not assessed
+
+            <br/>
+
+            <label for="texts">Create texts relevant to the vocation with structure and coherence that describe and document the pupil’s own work and are adapted to the purpose, recipient and situation.</label>
+            <br/>
+            <input type="radio" name="texts" value="3">High<input type="radio" name="texts" value="2">Middle<input type="radio" name="texts" value="1">Low<input type="radio" name="texts" value="0" checked>Not assessed
+            <br/>
+            
+            <label for="learning">Use appropriate strategies for language learning, text creation and communication.</label>
+            <br/>
+            <input type="radio" name="learning" value="3">High<input type="radio" name="learning" value="2">Middle<input type="radio" name="learning" value="1">Low<input type="radio" name="learning" value="0" checked>Not assessed
+            <br/>
+
+            <label for="digital">Use appropriate digital resources and other aids in language learning, text creation and interaction.</label>
+            <br/>
+            <input type="radio" name="digital" value="3">High<input type="radio" name="digital" value="2">Middle<input type="radio" name="digital" value="1">Low<input type="radio" name="digital" value="0" checked>Not assessed
+            <br/>
+
+            <label for="terminology">Listen to, understand and use terminology appropriate for the trade, both orally and in writing, in work situations</label>
+            <br/>
+            <input type="radio" name="terminology" value="3">High<input type="radio" name="terminology" value="2">Middle<input type="radio" name="terminology" value="1">Low<input type="radio" name="terminology" value="0" checked>Not assessed
+            <br/>
+
+            <label for="expression">Express oneself in a nuanced and precise manner with fluency and coherence, using idiomatic expressions and varied sentence structures adapted to the purpose, recipient and situation.</label>
+            <br/>
+            <input type="radio" name="expression" value="3">High<input type="radio" name="expression" value="2">Middle<input type="radio" name="expression" value="1">Low<input type="radio" name="expression" value="0" checked>Not assessed
+            <br/>
+
+            <label for="grammar">Use knowledge of grammar and text structure in working on one's own oral and written texts</label>
+            <br/>
+            <input type="radio" name="grammar" value="3">High<input type="radio" name="grammar" value="2">Middle<input type="radio" name="grammar" value="1">Low<input type="radio" name="grammar" value="0" checked>Not assessed
+            <br/>
+
+            <label for="read">Read and compare different factual texts on the same topic from different sources and critically assess the reliability of the sources.</label>
+            <br/>
+            <input type="radio" name="read" value="3">High<input type="radio" name="read" value="2">Middle<input type="radio" name="read" value="1">Low<input type="radio" name="read" value="0" checked>Not assessed
+            <br/>
+
+            <label for="sources">Use different sources in a critical, appropriate and accountable manner.</label>
+            <br/>
+            <input type="radio" name="sources" value="3">High<input type="radio" name="sources" value="2">Middle<input type="radio" name="sources" value="1">Low<input type="radio" name="sources" value="0" checked>Not assessed
+            <br/>
+
+
+            <h3>Comments</h3>
+            <textarea name="englishComments">
+            </textarea>
+
+            <input type="submit" value="Save assessment">
+
+
+
+        </form>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+</html>

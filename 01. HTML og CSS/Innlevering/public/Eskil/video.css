@@ -1,0 +1,34 @@
+
+body {
+    background-color: rgb(121, 121, 239);
+    margin: 0;
+    background-image: url("himmel.jpg");
+}
+
+#meny {
+    display: flex;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 40px;
+    background-color: #c6c6c6;
+    }
+
+#meny > a {
+    text-decoration: none;
+    color: black;
+    flex-grow: 1; 
+    flex-wrap: wrap;
+    padding: 5px;
+    background-color: white;
+    margin: 5px;
+    text-align: center;
+}
+
+#overskrift {
+    font-size: 2em;
+    margin-top: 75px;
+    text-align: center;
+    background-color: #aac9c6e6;
+    border: 1px solid black;
+}
