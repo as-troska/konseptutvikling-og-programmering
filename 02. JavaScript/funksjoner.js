@@ -13,3 +13,9 @@ tilfeldigHilsen();
 tilfeldigHilsen();
 tilfeldigHilsen();
 tilfeldigHilsen();
+
+let x;
+console.log(x)
+
+
+
