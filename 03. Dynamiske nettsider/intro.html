@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intro til Javascript</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Intro til Javascript</h1>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda fugiat debitis ad corrupti ducimus magnam harum nulla! Sunt numquam quo ut illum sapiente cum nam ipsam. Suscipit est labore rerum?</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis, earum optio quos illum aliquid porro vel minus corrupti molestiae alias sit est cumque blanditiis quia error nobis necessitatibus exercitationem beatae!</p>
+
+    <h1 class=".overskriften">En overskrift til</h1>
+
+    <h1 id="overskrift" class="overskriften">Enda en overskrift</h1>
+
+    <input type="text">
+
+    <img src="https://picsum.photos/200/300" alt="Alternativ tekst">
+
+    <script>
+        let overskrift = document.querySelector(".overskriften");
+
+        let kropp = document.querySelector("body");
+
+        let tilfeldigTall = Math.floor(Math.random() * 2);
+
+        if (tilfeldigTall == 0) {
+            kropp.style.backgroundColor = "red";
+        } else {
+            kropp.style.backgroundColor = "blue";
+        }
+
+        let avsnitt = document.querySelectorAll("p")
+
+        let inputEl = document.querySelector("input");
+
+
+
+        avsnitt[0].style.color = "white";
+        avsnitt[1].style.color = "white";
+
+       
+        avsnitt[1].innerText += " Dette er lagt til med <a href='http://javascript.com'>Javascript</a>";
+        overskrift.innerHTML = "Vi har fanget en H1";
+        overskrift.style.color = "white";
+
+        let bilde = document.querySelector("img");
+
+        bilde.src = "bilde.jpg";
+
+
+    </script>
+</body>
+</html>

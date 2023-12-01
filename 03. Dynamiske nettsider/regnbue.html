@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+
+    <script>
+        let divs = document.querySelectorAll("div")
+
+        let colors = ["#F69C7C", "#FED777", "#EFEE8C", "#C3DE97", "#8ED2CD", "#98AAD7"]
+
+        for (let i = 0; i < divs.length; i++) {
+            divs[i].style.backgroundColor = colors[i]
+            divs[i].style.width = "100px"
+            divs[i].style.height = "100px"
+            divs[i].style.display = "inline-block"            
+        }
+
+    </script>
+</body>
+</html>

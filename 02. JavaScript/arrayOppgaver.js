@@ -78,6 +78,8 @@ for (let i = 0; i < tall5.length; i++) {
     }
 }
 
+let storste = Math.max(...tall5)
+
 console.log("Største tall: " + storst)
 
 // c) Skriv et program som finner den minste verdien i arrayen. Sjekk at du finner riktig tall.
