@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            background-color: blueviolet;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>Overskrift</h1>
+
+    <ol id="liste">
+        <li>Element 1</li>
+        <li>Element 2</li>
+        <li>Element 3</li>
+    </ol>
+
+    <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi molestias ut vero. Corrupti quam beatae facilis? Non culpa architecto libero, exercitationem esse corporis obcaecati omnis vitae sed! Consequatur, molestiae deleniti.
+    </p>
+
+    <script>
+        let ordnetListeNode = document.querySelector("#liste");
+
+        let nyttElement = document.createElement("li")
+
+        nyttElement.innerText = "Element 4";
+
+        ordnetListeNode.appendChild(nyttElement);
+
+        let listePunkter = ["Element 5", "Element 6", "Element 7", "Element 8"];
+
+        for (let listePunkt of listePunkter) {
+            let element = document.createElement("li");
+            element.innerText = listePunkt;
+            ordnetListeNode.appendChild(element)
+        }
+
+        let dataOmTettsteder = [
+            {
+                tettsted: "Oslo",
+                innbyggere: 1064235
+            },
+            {
+                tettsted: "Bergen",
+                innbyggere: 267117
+            }, 
+            {
+                tettsted: "Stavanger/Sandnes",
+                innbyggere: 231693
+            },
+            {
+                tettsted: "Trondheim",
+                innbyggere: 194860
+            },
+            {
+                tettsted: "Fredrikstad/Sarpsborg",
+                innbyggere: 118992
+            }
+        ]
+
+
+        function lagDiagram() {
+            let diagramNode = document.createElement("div");
+            diagramNode.style.width = "1000px";
+            diagramNode.style.height = "700px";
+            diagramNode.style.backgroundColor = "grey";
+
+
+            for (let tettsted of dataOmTettsteder) {
+                let tettstedNode = document.createElement("div");
+                tettstedNode.style.height = "50px";
+                tettstedNode.style.width = tettsted.innbyggere / 2000 + "px";
+                tettstedNode.style.backgroundColor = "red";
+
+                let tekstNode = document.createElement("div");
+                tekstNode.innerText = tettsted.tettsted + ": " + tettsted.innbyggere;
+                
+                tettstedNode.style.display = "flex";
+                tettstedNode.style.alignItems = "center";
+                tettstedNode.style.justifyContent = "center";
+
+                tettstedNode.appendChild(tekstNode);
+                diagramNode.appendChild(tettstedNode);
+            }
+
+
+
+
+
+
+
+
+
+
+
+            document.body.appendChild(diagramNode);
+        }
+
+        lagDiagram()
+
+    </script>
+</body>
+</html>
